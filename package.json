@@ -1,0 +1,22 @@
+{
+  "name": "typeExercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:casaub0n/typeExercises.git",
+  "author": "Casaubon <netzach.yoshida@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "eslint": "^5.15.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.4.0-dev.20190302"
+  }
+}
