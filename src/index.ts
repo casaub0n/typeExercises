@@ -9,3 +9,7 @@ interface User {
 }
 
 export const showUserInfo = (user: User):string => {return "OK!"}
+
+export const sumOfPos = (arr: number[]) => {
+  return arr.filter(num => num >= 0).reduce((acc, num) => acc + num, 0);
+}
