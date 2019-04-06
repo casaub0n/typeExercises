@@ -1,4 +1,4 @@
-export const isPositive = (num: number):boolean => {
+export const isPositive = (num: number): boolean => {
   return num >= 0
 }
 
@@ -8,21 +8,23 @@ interface User {
   private_: boolean
 }
 
-export const showUserInfo = (user: User):string => {return "OK!"}
+export const showUserInfo = (user: User): string => {
+  return user.name
+}
 
 type IsPositiveFunc = (arg: number) => boolean
 export const isPositiveFunc: IsPositiveFunc = num => num >= 0
 
 export const sumOfPos = (arr: number[]) => {
-  return arr.filter(num => num >= 0).reduce((acc, num) => acc + num, 0);
+  return arr.filter(num => num >= 0).reduce((acc, num) => acc + num, 0)
 }
 
 export const myFilter = <T>(arr: T[], predicate: (elm: T) => boolean): T[] => {
-  const result = [];
+  const result = []
   for (const elm of arr) {
     if (predicate(elm)) {
-      result.push(elm);
+      result.push(elm)
     }
   }
-  return result;
+  return result
 }
