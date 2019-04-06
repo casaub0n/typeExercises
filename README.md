@@ -4,10 +4,20 @@
 # Usage
 ## install
 ```console
-yarn install
+$ yarn install
 ```
 
 ## script start
 ```console
-yarn start
+$ yarn start
+```
+
+## test
+```console
+$ yarn test
+```
+
+## test watch
+```console
+$ yarn test:watch
 ```
