@@ -10,6 +10,9 @@ interface User {
 
 export const showUserInfo = (user: User):string => {return "OK!"}
 
+type IsPositiveFunc = (arg: number) => boolean
+export const isPositiveFunc: IsPositiveFunc = num => num >= 0
+
 export const sumOfPos = (arr: number[]) => {
   return arr.filter(num => num >= 0).reduce((acc, num) => acc + num, 0);
 }
