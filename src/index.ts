@@ -28,3 +28,16 @@ export const myFilter = <T>(arr: T[], predicate: (elm: T) => boolean): T[] => {
   }
   return result
 }
+
+type Speed = 'slow' | 'medium' | 'fast'
+
+export const getSpeed = (speed: Speed): number => {
+  switch (speed) {
+    case 'slow':
+      return 10
+    case 'medium':
+      return 50
+    case 'fast':
+      return 200
+  }
+}
