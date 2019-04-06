@@ -10,5 +10,5 @@ interface User {
 
 export const showUserInfo = (user: User):string => {return "OK!"}
 
-const f: (arg1: number) => boolean = isPositive
-// export const isPositiveFunc: IsPositiveFunc = num => num >= 0
+type IsPositiveFunc = (arg: number) => boolean
+export const isPositiveFunc: IsPositiveFunc = num => num >= 0
