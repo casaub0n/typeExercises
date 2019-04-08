@@ -26,5 +26,9 @@
     "ts-jest": "^24.0.0",
     "ts-node": "^8.0.2",
     "typescript": "^3.4.0-dev.20190302"
+  },
+  "dependencies": {
+    "conditional-type-checks": "^1.0.0",
+    "tsd": "^0.7.2"
   }
 }
