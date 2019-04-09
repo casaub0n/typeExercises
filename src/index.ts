@@ -41,3 +41,14 @@ export const getSpeed = (speed: Speed): number => {
       return 200
   }
 }
+
+type AddEventListener = {
+  capture?: true
+  once?: false
+}
+
+export declare function addEventListener(
+  arg: string,
+  arg2: () => void,
+  arg3?: boolean | AddEventListener
+): void
