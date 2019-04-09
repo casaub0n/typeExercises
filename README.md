@@ -14,10 +14,15 @@ $ yarn start
 
 ## test
 ```console
-$ yarn test
+$ yarn test:jest
 ```
 
 ## test watch
 ```console
 $ yarn test:watch
+```
+
+## type check
+```console
+$ yarn test:ts
 ```
