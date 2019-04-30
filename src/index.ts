@@ -52,3 +52,9 @@ export declare function addEventListener(
   arg2: () => void,
   arg3?: boolean | AddEventListener
 ): void
+
+type UseStateUpdate<T> = T | ((oldVal: T) => T)
+
+export declare function useState<T>(
+  initVal: T
+): [T, (updator: UseStateUpdate<T>) => void]
