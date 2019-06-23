@@ -2,7 +2,7 @@ export const isPositive = (num: number): boolean => {
   return num >= 0
 }
 
-interface User {
+type User = {
   name: string
   age: number
   private_: boolean
@@ -58,3 +58,5 @@ type UseStateUpdate<T> = T | ((oldVal: T) => T)
 export declare function useState<T>(
   initVal: T
 ): [T, (updator: UseStateUpdate<T>) => void]
+
+export type PartialUser = Partial<User>
