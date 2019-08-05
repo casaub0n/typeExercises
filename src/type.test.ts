@@ -4,16 +4,16 @@ import {
   sumOfPos,
   myFilter,
   isPositiveFunc,
-  getSpeed
+  getSpeed,
+  PartialUser
 } from './index'
 
 test('数値を受け取ってそれが0以上ならtrueになるか', () => {
   expect(isPositive(3)).toBe(true)
 })
 
-const personA = { name: 'B', age: 18, private_: false }
-
 test('オブジェクトの型でUserが持てるか', () => {
+  const personA = { name: 'B', age: 18, private_: false }
   expect(showUserInfo(personA)).toBe('B')
 })
 
@@ -34,4 +34,9 @@ test('決められたスピードのときに決められた速度が返され�
   expect(getSpeed('slow')).toBe(10)
   expect(getSpeed('medium')).toBe(50)
   expect(getSpeed('fast')).toBe(200)
+})
+
+test('UserがOptionalになっている', () => {
+  const user: PartialUser = { name: 'Optional太郎' }
+  expect(user.name).toBe('Optional太郎')
 })

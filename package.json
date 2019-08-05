@@ -6,6 +6,7 @@
   "author": "Casaubon <netzach.yoshida@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "fix:js": "eslint 'src/**/*.{ts,tsx}' --fix && prettier 'src/**/*.{ts,tsx}' --write",
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
     "test:jest": "jest",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.9",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-jest": "^22.4.1",
