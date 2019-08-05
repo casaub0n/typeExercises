@@ -6,6 +6,7 @@
   "author": "Casaubon <netzach.yoshida@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "fix:js": "eslint 'src/**/*.{ts,tsx}' --fix && prettier 'src/**/*.{ts,tsx}' --write",
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
     "test:jest": "jest",
