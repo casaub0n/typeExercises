@@ -20,7 +20,9 @@ module.exports = {
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
     "@typescript-eslint/no-unused-vars": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "no-console": 0,
+    "no-undef": "off"
   },
   "env": {
     "jest/globals": true
