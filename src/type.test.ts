@@ -36,7 +36,9 @@ test('決められたスピードのときに決められた速度が返され�
   expect(getSpeed('fast')).toBe(200)
 })
 
-test('UserがOptionalになっている', () => {
-  const user: PartialUser = { name: 'Optional太郎' }
-  expect(user.name).toBe('Optional太郎')
+describe('Advenced Type', () => {
+  test('UserがOptionalになっている', () => {
+    const user: PartialUser = { name: 'Optional太郎' }
+    expect(user.name).toBe('Optional太郎')
+  })
 })
