@@ -1050,9 +1050,9 @@ concat-map@0.0.1:
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
 conditional-type-checks@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/conditional-type-checks/-/conditional-type-checks-1.0.1.tgz#0905a8631ea11bf155e7a6edb6d6b55c2e50520e"
-  integrity sha512-+O/IE/QGjXzdk4ttJFLRQm8pofQE0KZZmgcamquUGhHfaZt0UTZMlklqW0J9tWO8HQvC70cPahEAVMwSfeqtuQ==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/conditional-type-checks/-/conditional-type-checks-1.0.4.tgz#491e2752006e1e049a11c8c26592b1b8535efbf9"
+  integrity sha512-3oKsfmRWuVLZ8WBmhHkCqLsa01mdX+H4aUkxesOXGYPAA2xJtrrlEfM5imvsz4Wv55RPaiSofgYEXikUQEW96g==
 
 configstore@^3.0.0:
   version "3.1.2"
